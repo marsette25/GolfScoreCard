@@ -9,7 +9,7 @@
 *Create, Update, Delete golf games - The entire instance of the game will be deleted and cannot be retrieved <br />
 *Create, Update, Delete golf scores per hole within a game - this will be helpful if the score for the hole was incorrect <br />
 *Users can compare scores from previous games for the same course - Per hole, 9 holes, 18 holes <br />
-*Course average will appear next to each Nashville course <br />
+*Course average will appear next to each Nashville course name <br />
 
 ###Advanced User Criteria
 
