@@ -13,6 +13,7 @@
 
 ###Advanced User Criteria
 
+*Allow friends to view Score Cards <br />
 *Handicaps <br />
 *Add circles and squares for Eagles and Bogies <br />
 *Users can choose if Putts, GIR and Fairways hit will appear on the score card <br />
