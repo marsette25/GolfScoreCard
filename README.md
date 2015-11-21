@@ -1,4 +1,4 @@
-#GolfScoreCard
+#Golf Score Card
 ##Nashville Public Golf Course Score Card
 
 ###User Acceptance Criteria
