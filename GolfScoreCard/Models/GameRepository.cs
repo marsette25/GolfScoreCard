@@ -9,18 +9,18 @@ namespace GolfScoreCard.Models
 
     public class GameRepository
     {
-        private GameInformationContext context;
+        private GameContext context;
 
         // DbContext is now ApplicationDbContext which gives use access to the
         // table containing the users.
-        //public IDbSet<ApplicationUser> Users { get { return context.Users; } }
+        public IDbSet<ApplicationUser> Users { get { return context.Users; } }
 
         public GameRepository()
         {
-            context = new GameInformationContext();
+            context = new GameContext();
         }
 
-        public GameRepository(GameInformationContext _context)
+        public GameRepository(GameContext _context)
         {
             context = _context;
         }

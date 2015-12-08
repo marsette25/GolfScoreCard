@@ -9,19 +9,19 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 namespace GolfScoreCard.Models
 {
 
-    public class GameInformationContext : DbContext
+    public class GameContext : DbContext
     {
 
 
         // Uses the connection string from the Web.config named "BoardContext"
         
-        public GameInformationContext() : base ("GameInformation")
-        {
+        //public GameInformationContext() : base ("GameInformation")
+        //{
             
-        }
+        //}
 
         public virtual IDbSet<GolfCourseInformation> GolfCourseInformation { get; set; }
-        public virtual DbSet<Game> Game { get; set; }
+        public virtual IDbSet<Game> Game { get; set; }
 
         // IQueryable, IList/List, ICollection/Collection, IDbSet/Dbset
 

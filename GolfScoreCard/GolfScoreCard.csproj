@@ -184,7 +184,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\GameInformationContext.cs" />
+    <Compile Include="Models\GameContext.cs" />
     <Compile Include="Models\GameInitializer.cs" />
     <Compile Include="Models\GameRepository.cs" />
     <Compile Include="Models\GolfCourseInformation.cs" />
@@ -195,6 +195,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\.gitignore.txt">
+      <Link>.gitignore.txt</Link>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />

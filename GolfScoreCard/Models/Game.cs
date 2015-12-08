@@ -8,6 +8,7 @@ namespace GolfScoreCard.Models
     public class Game
     {
         public int GameId { get; set; }
+        public List<ApplicationUser> User { get; set; }
         public List<GolfCourseInformation> CourseName {get; set;}
         public List<GolfCourseInformation> FrontNine { get; set; }
         public List<GolfCourseInformation> BackNine { get; set; }

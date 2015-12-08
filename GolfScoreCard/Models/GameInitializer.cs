@@ -8,9 +8,9 @@ using GolfScoreCard.Models;
 namespace GolfScoreCard.Models
 {
 
-    public class GameInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<GameInformationContext>
+    public class GameInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<GameContext>
     {
-        protected override void Seed(GameInformationContext context)
+        protected override void Seed(GameContext context)
         {
             var golfcourse = new List<GolfCourseInformation>
             {
