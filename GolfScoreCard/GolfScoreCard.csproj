@@ -184,13 +184,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Container.cs" />
-    <Compile Include="Models\GameSummary.cs" />
-    <Compile Include="Models\GolfCourseList.cs" />
-    <Compile Include="Models\GolfCoursePar.cs" />
-    <Compile Include="Models\GolfCourseYards.cs" />
+    <Compile Include="Models\GameInformationContext.cs" />
+    <Compile Include="Models\GameRepository.cs" />
+    <Compile Include="Models\GolfCourseInformation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
