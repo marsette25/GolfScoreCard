@@ -185,6 +185,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\GameContext.cs" />
+    <Compile Include="Models\GameInformation.cs" />
     <Compile Include="Models\GameInitializer.cs" />
     <Compile Include="Models\GameRepository.cs" />
     <Compile Include="Models\GolfCourseInformation.cs" />

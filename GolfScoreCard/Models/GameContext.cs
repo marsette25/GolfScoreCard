@@ -9,7 +9,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 namespace GolfScoreCard.Models
 {
 
-    public class GameContext : DbContext
+    public class GameContext : ApplicationDbContext
     {
 
 
@@ -21,7 +21,8 @@ namespace GolfScoreCard.Models
         //}
 
         public virtual IDbSet<GolfCourseInformation> GolfCourseInformation { get; set; }
-        public virtual IDbSet<Game> Game { get; set; }
+        public virtual IDbSet<Game> MyGames { get; set; }
+        public virtual IDbSet<GameInformation> GamesPlayed { get; set; }
 
         // IQueryable, IList/List, ICollection/Collection, IDbSet/Dbset
 
