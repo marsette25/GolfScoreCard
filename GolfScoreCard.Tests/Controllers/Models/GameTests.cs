@@ -17,7 +17,7 @@ namespace GolfScoreCard.Tests.Models
         [TestMethod]
         public void NewGameInformationEnsurePropertiesWork()
         {
-            Game newgame = new Game { ScoreHoleOne = 3 };
+            Game newgame = new Game { Title = "Marsie's Golf Games" };
         }
     }
 }

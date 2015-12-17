@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,6 +8,7 @@ namespace GolfScoreCard.Models
 {
     public class GolfCourseInformation
     {
+        [Key]
         public int GolfCourseId { get; set; }
         public string GolfCourseName { get; set; }
         public int BlackHoleOne { get; set; }

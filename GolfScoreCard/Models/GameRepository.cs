@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using GolfScoreCard.Models;
 
 namespace GolfScoreCard.Models
 {
@@ -25,16 +26,16 @@ namespace GolfScoreCard.Models
             context = _context;
         }
 
-        //void or bool or BrelloList
-        public bool AddList(int _board_id, BrelloList _list)
+        //void or bool 
+        public bool AddGameInformation(int _Game_id, GameInformation _list)
         {
-            var query = from b in context.Boards where b.BoardId == _board_id select b;
-            Board found_board = null;
+            var query = from g in context.MyGames where g.GameId == _Game_id select g;
+            Game found_game = null;
             bool result = true;
             try
             {
-                found_board = query.Single<Board>();
-                found_board.Lists.Add(_list);
+                found_game = query.Single<Game>();
+                found_game.GamesPlayed.Add(_list);
                 context.SaveChanges();
             }
             catch (InvalidOperationException)
@@ -48,56 +49,43 @@ namespace GolfScoreCard.Models
             return result;
         }
 
-        public List<BrelloList> GetAllLists()
+        public Game CreateGame(string title, ApplicationUser owner)
         {
-            var query = from l in context.Boards select l;
-            return query.SelectMany(board => board.Lists).ToList();
-        }
-
-        // This is an example of overloading a method
-        public List<BrelloList> GetAllLists(int _board_id)
-        {
-            var query = from b in context.Boards where b.BoardId == _board_id select b.Lists;
-            return query.Single<List<BrelloList>>();
-        }
-
-        public Board CreateBoard(string title, ApplicationUser owner)
-        {
-            Board my_board = new Board { Title = title, Owner = owner };
-            context.Boards.Add(my_board);
+            Game my_game= new Game { Title = title, Owner = owner };
+            context.MyGames.Add(my_game);
             context.SaveChanges(); // This saves something to the Database
 
-            return my_board;
+            return my_game;
         }
 
-        public virtual List<Board> GetAllBoards()
+        public virtual List<Game> GetAllGames()
         {
-            return context.Boards.ToList();
+            return context.MyGames.ToList();
         }
 
-        public int GetBoardCount()
+        public int GetGameCount()
         {
-            var query = from b in context.Boards select b;
-            // Same As -> context.Boards.ToList().Count
+            var query = from g in context.MyGames select g;
+            
 
             return query.Count();
         }
 
-        public List<Board> GetBoards(ApplicationUser user1)
+        public List<Game> GetGames(ApplicationUser user1)
         {
-            var query = from b in context.Boards where b.Owner.Id == user1.Id select b;
-            return query.ToList<Board>(); // Same as query.ToList();
+            var query = from g in context.MyGames where g.Owner.Id == user1.Id select g;
+            return query.ToList<Game>(); // Same as query.ToList();
         }
 
-        public Board GetBoardById(int board_id)
+        public Game GetGameById(int game_id)
         {
-            var query = from b in context.Boards where b.BoardId == board_id select b;
-            return query.Single<Board>(); // Same as query.ToList();
+            var query = from g in context.MyGames where g.GameId == game_id select g;
+            return query.Single<Game>(); // Same as query.ToList();
         }
 
-        public int GetListCount()
+        public bool AddGameInformation(int v, object _list)
         {
-            return GetAllLists().Count;
+            throw new NotImplementedException();
         }
     }
 

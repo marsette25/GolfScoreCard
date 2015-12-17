@@ -69,22 +69,22 @@ namespace GolfScoreCard.Tests.Controllers.Models
             {
 
                 GameRepository game_repo = new GameRepository(mock_context.Object);
-                GameInformation newgame = new GameInformation { ScoreHoleOne = 6, ScoreHoleTwo = 5 };
-                my_game.Add(new Game { Title = "My Games", Owner = user1, GameId = 1 });
+                Game newgame = new Game{ Title = "MyGame", GameId = 1};
+                my_game.Add(new GameInformation{ ScoreHoleOne = 6, GameInformationId = 7 });
 
                 ConnectMocksToDataSource();
 
 
-                bool actual = board_repo.AddList(1, list);
+                bool actual = my_game.AddGameInformation(1, newgame);
 
-                Assert.AreEqual(1, board_repo.GetListCount());
+                Assert.AreEqual(1, game_repo.GetGameCount());
                 Assert.IsTrue(actual);
             }
 
             [TestMethod]
-            public void BoardRepositoryEnsureFalseIfInvalidBoardId()
+            public void GameRepositoryEnsureFalseIfInvalidBoardId()
             {
-                BoardRepository board_repo = new BoardRepository(mock_context.Object);
+                GameRepository board_repo = new GameRepository(mock_context.Object);
                 BrelloList list = new BrelloList { Title = "ToDo", BrelloListId = 1 };
                 my_list.Add(new Board { Title = "My First Board", Owner = user1, BoardId = 1 });
 
@@ -259,7 +259,7 @@ namespace GolfScoreCard.Tests.Controllers.Models
                 // 3. You must ensure Provider, GetEnumerator(), ElementType, and Expression are defined
                 //    with your collection class (the container class that holds your data).
 
-                my_list.Add(new Board { Title = "Tim's Board", Owner = owner });
+                my_game.Add(new Game { Title = "Tim's Board", Owner = owner });
                 my_list.Add(new Board { Title = "Sally's Board", Owner = owner });
                 ConnectMocksToDataSource();
 

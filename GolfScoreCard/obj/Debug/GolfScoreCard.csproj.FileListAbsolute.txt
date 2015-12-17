@@ -72,9 +72,6 @@ C:\Users\Marsette\documents\visual studio 2015\Projects\GolfScoreCard\GolfScoreC
 C:\Users\Marsette\documents\visual studio 2015\Projects\GolfScoreCard\GolfScoreCard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Marsette\documents\visual studio 2015\Projects\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.dll
 C:\Users\Marsette\documents\visual studio 2015\Projects\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.pdb
-C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.csprojResolveAssemblyReference.cache
-C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.dll
-C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.pdb
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\roslyn\csc.exe
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -147,3 +144,5 @@ C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\Microsoft.Owi
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.dll
+C:\Users\Marsette\Documents\GitHub\GolfScoreCard\GolfScoreCard\obj\Debug\GolfScoreCard.pdb

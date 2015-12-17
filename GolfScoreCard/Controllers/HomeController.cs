@@ -15,7 +15,7 @@ namespace GolfScoreCard.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Golf Golf Golf Golf.";
 
             return View();
         }
